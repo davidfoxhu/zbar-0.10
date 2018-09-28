@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libzbar", "zbar64.vcxproj", "{F2B2900E-80DE-4A48-A978-DACD7B2F69A6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{42272C3A-F645-413C-90B3-F53678CDCB50} = {42272C3A-F645-413C-90B3-F53678CDCB50}
+		{EA99DFD8-9689-4A05-986E-87953116B699} = {EA99DFD8-9689-4A05-986E-87953116B699}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libiconv", "libiconv-1.15\libiconv.vcxproj", "{42272C3A-F645-413C-90B3-F53678CDCB50}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "zlib-1.2.11\zlib.vcxproj", "{EA99DFD8-9689-4A05-986E-87953116B699}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zbarpy", "python\libzbarpy.vcxproj", "{48AFD5FF-9B31-4DDF-BE6C-AF6F02A16CC8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F2B2900E-80DE-4A48-A978-DACD7B2F69A6} = {F2B2900E-80DE-4A48-A978-DACD7B2F69A6}
+		{42272C3A-F645-413C-90B3-F53678CDCB50} = {42272C3A-F645-413C-90B3-F53678CDCB50}
+		{EA99DFD8-9689-4A05-986E-87953116B699} = {EA99DFD8-9689-4A05-986E-87953116B699}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zbarlight", "zbarlight-1.2\zbarlight.vcxproj", "{4E40F583-DE8D-4A78-9473-E51E04B9C207}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F2B2900E-80DE-4A48-A978-DACD7B2F69A6} = {F2B2900E-80DE-4A48-A978-DACD7B2F69A6}
+		{42272C3A-F645-413C-90B3-F53678CDCB50} = {42272C3A-F645-413C-90B3-F53678CDCB50}
+		{EA99DFD8-9689-4A05-986E-87953116B699} = {EA99DFD8-9689-4A05-986E-87953116B699}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2B2900E-80DE-4A48-A978-DACD7B2F69A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F2B2900E-80DE-4A48-A978-DACD7B2F69A6}.Debug|Win32.Build.0 = Debug|Win32
+		{F2B2900E-80DE-4A48-A978-DACD7B2F69A6}.Debug|x64.ActiveCfg = Debug|x64
+		{F2B2900E-80DE-4A48-A978-DACD7B2F69A6}.Debug|x64.Build.0 = Debug|x64
+		{F2B2900E-80DE-4A48-A978-DACD7B2F69A6}.Release|Win32.ActiveCfg = Release|Win32
+		{F2B2900E-80DE-4A48-A978-DACD7B2F69A6}.Release|Win32.Build.0 = Release|Win32
+		{F2B2900E-80DE-4A48-A978-DACD7B2F69A6}.Release|x64.ActiveCfg = Release|x64
+		{F2B2900E-80DE-4A48-A978-DACD7B2F69A6}.Release|x64.Build.0 = Release|x64
+		{42272C3A-F645-413C-90B3-F53678CDCB50}.Debug|Win32.ActiveCfg = Debug|Win32
+		{42272C3A-F645-413C-90B3-F53678CDCB50}.Debug|Win32.Build.0 = Debug|Win32
+		{42272C3A-F645-413C-90B3-F53678CDCB50}.Debug|x64.ActiveCfg = Debug|x64
+		{42272C3A-F645-413C-90B3-F53678CDCB50}.Debug|x64.Build.0 = Debug|x64
+		{42272C3A-F645-413C-90B3-F53678CDCB50}.Release|Win32.ActiveCfg = Release|Win32
+		{42272C3A-F645-413C-90B3-F53678CDCB50}.Release|Win32.Build.0 = Release|Win32
+		{42272C3A-F645-413C-90B3-F53678CDCB50}.Release|x64.ActiveCfg = Release|x64
+		{42272C3A-F645-413C-90B3-F53678CDCB50}.Release|x64.Build.0 = Release|x64
+		{EA99DFD8-9689-4A05-986E-87953116B699}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA99DFD8-9689-4A05-986E-87953116B699}.Debug|Win32.Build.0 = Debug|Win32
+		{EA99DFD8-9689-4A05-986E-87953116B699}.Debug|x64.ActiveCfg = Debug|x64
+		{EA99DFD8-9689-4A05-986E-87953116B699}.Debug|x64.Build.0 = Debug|x64
+		{EA99DFD8-9689-4A05-986E-87953116B699}.Release|Win32.ActiveCfg = Release|Win32
+		{EA99DFD8-9689-4A05-986E-87953116B699}.Release|Win32.Build.0 = Release|Win32
+		{EA99DFD8-9689-4A05-986E-87953116B699}.Release|x64.ActiveCfg = Release|x64
+		{EA99DFD8-9689-4A05-986E-87953116B699}.Release|x64.Build.0 = Release|x64
+		{48AFD5FF-9B31-4DDF-BE6C-AF6F02A16CC8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{48AFD5FF-9B31-4DDF-BE6C-AF6F02A16CC8}.Debug|Win32.Build.0 = Debug|Win32
+		{48AFD5FF-9B31-4DDF-BE6C-AF6F02A16CC8}.Debug|x64.ActiveCfg = Debug|x64
+		{48AFD5FF-9B31-4DDF-BE6C-AF6F02A16CC8}.Debug|x64.Build.0 = Debug|x64
+		{48AFD5FF-9B31-4DDF-BE6C-AF6F02A16CC8}.Release|Win32.ActiveCfg = Release|Win32
+		{48AFD5FF-9B31-4DDF-BE6C-AF6F02A16CC8}.Release|Win32.Build.0 = Release|Win32
+		{48AFD5FF-9B31-4DDF-BE6C-AF6F02A16CC8}.Release|x64.ActiveCfg = Release|x64
+		{48AFD5FF-9B31-4DDF-BE6C-AF6F02A16CC8}.Release|x64.Build.0 = Release|x64
+		{4E40F583-DE8D-4A78-9473-E51E04B9C207}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4E40F583-DE8D-4A78-9473-E51E04B9C207}.Debug|Win32.Build.0 = Debug|Win32
+		{4E40F583-DE8D-4A78-9473-E51E04B9C207}.Debug|x64.ActiveCfg = Debug|x64
+		{4E40F583-DE8D-4A78-9473-E51E04B9C207}.Debug|x64.Build.0 = Debug|x64
+		{4E40F583-DE8D-4A78-9473-E51E04B9C207}.Release|Win32.ActiveCfg = Release|Win32
+		{4E40F583-DE8D-4A78-9473-E51E04B9C207}.Release|Win32.Build.0 = Release|Win32
+		{4E40F583-DE8D-4A78-9473-E51E04B9C207}.Release|x64.ActiveCfg = Release|x64
+		{4E40F583-DE8D-4A78-9473-E51E04B9C207}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B74CDA5-CF1C-4367-8B47-E2E18FD1E38C}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal
